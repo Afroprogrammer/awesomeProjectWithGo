@@ -105,6 +105,7 @@ func main() {
 	}
 	port := os.Getenv("PORT")
 	if port == "" {
+		fmt.Sprintf("port not found ")
 		port = "3000"
 	}
 	apikey := os.Getenv("NEWS_API_KEY")
