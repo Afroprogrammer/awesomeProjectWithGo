@@ -9,10 +9,14 @@ html {
 }
 
 :root {
-    --light-green: #00ff00;
-    --dark-green: #003b00;
+    /*--light-green: #00ff00;*/
+    --cornflower-blue: #6495EDFF;
+    /*--dark-green: #003b00;*/
+    --dark-cyan: #008B8BFF;
     --dark-grey: #777;
     --light-grey: #dadce0;
+    --white: #FFFF;
+    --black: #000000FF;
 }
 
 body {
@@ -21,7 +25,9 @@ body {
 
 a {
     text-decoration: none;
-    color: #333;
+    /*color: #333;*/
+    color: black;
+    /*color: #FF0000FF;*/
 }
 
 a:hover {
@@ -29,8 +35,11 @@ a:hover {
 }
 
 a.button {
-    border: 2px solid #004400;
-    color: var(--dark-green);
+    /*border: 2px solid #004400;*/
+    border: 2px solid #000000;
+    border: 2px solid #000000;
+
+    color: var(--black);
     border-radius: 4px;
     padding: 6px 24px;
     font-size: 14px;
@@ -39,8 +48,8 @@ a.button {
 
 a.button:hover {
     text-decoration: none;
-    background-color: var(--dark-green);
-    color: var(--light-green);
+    background-color: var(--white);
+    color: var(--black);
 }
 
 header {
@@ -52,13 +61,14 @@ header {
     right: 0;
     display: flex;
     justify-content: space-between;
-    background-color: var(--light-green);
+    background-color: var(--cornflower-blue);
     padding: 5px 10px;
     align-items: center;
 }
 
 .logo {
-    color: #002200;
+    /*color: #002200;*/
+    color: #000000;
 }
 
 form {
@@ -70,8 +80,8 @@ form {
     height: 100%;
     border-radius: 4px;
     border-color: transparent;
-    background-color: var(--dark-green);
-    color: var(--light-green);
+    background-color: var(--white);
+    color: var(--black);
     font-size: 16px;
     line-height: 1.4;
     padding-left: 5px;
@@ -85,7 +95,7 @@ form {
 }
 
 .result-count {
-    color: var(--dark-grey);
+    color: var(--black);
     text-align: center;
     margin-bottom: 15px;
 }
@@ -98,7 +108,7 @@ form {
     display: flex;
     align-items: flex-start;
     margin-bottom: 30px;
-    border: 1px solid var(--light-grey);
+    border: 1px solid var(--white);
     padding: 15px;
     border-radius: 4px;
     justify-content: space-between;
@@ -116,13 +126,13 @@ form {
 }
 
 .description {
-    color: var(--dark-grey);
+    color: var(--black);
     margin-bottom: 15px;
 }
 
 .metadata {
     display: flex;
-    color: var(--dark-green);
+    color: var(--dark-cyan);
     font-size: 14px;
 }
 
