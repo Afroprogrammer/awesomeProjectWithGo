@@ -3,7 +3,6 @@ package main
 import (
 	"awesomeProject/news"
 	"bytes"
-	"fmt"
 	"github.com/joho/godotenv"
 	"html/template"
 	"log"
@@ -105,11 +104,9 @@ func main() {
 	}
 	port := os.Getenv("PORT")
 	if port == "" {
-		fmt.Sprintf("port not found ")
 		port = "3000"
 	}
 	apikey := os.Getenv("NEWS_API_KEY")
-	fmt.Println("Hello World!" + apikey)
 
 	if apikey == "" {
 		log.Fatal("Env: apikey must be set")
